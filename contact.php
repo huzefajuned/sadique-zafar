@@ -8,9 +8,9 @@ if(!empty($_POST["send"])) {
 	$toEmail = "zafarcomputer20@gmail.com";
 	$mailHeaders = "From: " . $name . "<". $email .">\r\n";
 	if(mail($toEmail, $subject, $content, $mailHeaders)) {
-	    $message = "Your contact information is received successfully.";
+	    $message = "Your contact information is received su ccessfully.";
 	    $type = "success";
 	}
 }
-require_once "contact-view.php";
+require_once "contact.php";
 ?>
